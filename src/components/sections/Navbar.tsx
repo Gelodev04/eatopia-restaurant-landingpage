@@ -3,7 +3,7 @@ import React from "react";
 export const BurgerIcon = () => {
   return (
     <svg
-      className="w-[35px]"
+      className="w-[40px]"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +143,11 @@ export const TiktokIcon = () => {
 
 export default function CustomNavbar() {
   return (
-    <nav className="fixed z-10  py-2 px-4  w-full">
+    <nav className="fixed z-10  py-4 px-4  w-full">
       <div className="flex items-center justify-between ">
         <h1 className="text-white text-3xl">Logo</h1>
         <ul className="flex items-center">
-          <li className="flex gap-3 mr-4">
+          <li className="flex gap-5 mr-6">
             <FacebookIcon />
             <InstagramIcon />
             <TiktokIcon />

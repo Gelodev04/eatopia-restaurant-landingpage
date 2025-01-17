@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="">
         <HeroUiProvider>
-          <main className="h-full ">{children}</main>
+          <main>{children}</main>
         </HeroUiProvider>
       </body>
     </html>
