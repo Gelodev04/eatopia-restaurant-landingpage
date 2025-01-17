@@ -18,13 +18,13 @@ export default function Carousel() {
         navigation
         pagination={{ clickable: true }}
         loop={true}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         modules={[Navigation, Pagination, Autoplay]}
       >
         <SwiperSlide>
           <div className="relative">
             <Image
-              style={{ height: "100vh", width: "100%", objectFit: "cover" }}
+              style={{ height: "100vh", width: "100%", objectFit: "cover", objectPosition: "center" }}
               src="/images/carousel1.jpg"
               alt="Slide 1"
               width={2000}
@@ -36,7 +36,7 @@ export default function Carousel() {
         <SwiperSlide>
           <div className="relative">
             <Image
-              style={{ height: "100vh", width: "100%", objectFit: "cover" }}
+              style={{ height: "100vh", width: "100%", objectFit: "cover", objectPosition: "center" }}
               src="/images/carousel2.jpg"
               alt="Slide 1"
               width={2000}
@@ -48,7 +48,8 @@ export default function Carousel() {
         <SwiperSlide>
           <div className="relative">
             <Image
-              style={{ height: "100vh", width: "100%", objectFit: "cover" }}
+            
+              style={{ height: "100vh", width: "100%", objectFit: "cover", objectPosition: "center" }}
               src="/images/carousel3.jpg"
               alt="Slide 1"
               width={2000}

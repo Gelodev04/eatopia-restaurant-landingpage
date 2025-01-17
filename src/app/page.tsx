@@ -5,11 +5,13 @@ import FirstSection from "@/components/sections/FirstSection";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <HomePage />
+      <div className="mx-4"> 
       <FirstSection />
+      </div>
       <div className="h-screen"></div>
-    </div>
+    </>
   );
 }

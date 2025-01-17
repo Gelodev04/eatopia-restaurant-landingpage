@@ -145,7 +145,7 @@ export default function CustomNavbar() {
   return (
     <nav className="fixed z-10  py-4 px-4  w-full">
       <div className="flex items-center justify-between ">
-        <h1 className="text-white text-3xl">Logo</h1>
+        <h1 className="text-white text-3xl">Eatopia</h1>
         <ul className="flex items-center">
           <li className="flex gap-5 mr-6">
             <FacebookIcon />
