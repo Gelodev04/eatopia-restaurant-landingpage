@@ -5,17 +5,33 @@ import Image from "next/image";
 export default function FirstSection() {
   return (
     <div className="mt-[5rem] flex flex-col">
-      <h1 className="text-6xl text-center font-bold">Welcome</h1>
-      <p className="text-center text-lg mt-7">
-        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed
-        fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac
-        facilisis ligula sem id neque.
-      </p>
+      <div className="mx-3">
+        <h1 className="text-6xl text-center font-bold">Welcome</h1>
+        <p className="text-center text-lg mt-7">
+          Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed
+          fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac
+          facilisis ligula sem id neque.
+        </p>
+      </div>
       <OurStory />
       <div className="overflow-hidden rounded-lg h-[450px] mx-8">
         <Image
           className="rounded-lg duration-300 hover:scale-105 ease-in-out h-full object-cover"
           src="/images/food1.jpg"
+          alt="eatopia"
+          width={1000}
+          height={1000}
+        />
+      </div>
+
+      <div className="overflow-hidden  mt-[10rem] h-[500px] relative group">
+        <div className="absolute bg-black  bg-opacity-[0.4] inset-0 z-10 flex flex-col items-center justify-center ">
+          <h1 className="text-red-500 text-4xl italic">Discover </h1>
+          <span className="text-white text-7xl font-semibold">Eatopia</span>
+        </div>
+        <Image
+          className=" duration-300 group-hover:scale-105 ease-in-out h-full object-cover"
+          src="/images/discoverpic.jpg"
           alt="eatopia"
           width={1000}
           height={1000}

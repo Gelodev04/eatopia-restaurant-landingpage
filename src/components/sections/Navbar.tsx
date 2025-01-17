@@ -141,6 +141,8 @@ export const TiktokIcon = () => {
   );
 };
 
+
+
 export default function CustomNavbar() {
   return (
     <nav className="fixed z-10  py-4 px-4  w-full">

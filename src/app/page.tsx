@@ -8,9 +8,9 @@ export default function Home() {
     <>
       <Navbar />
       <HomePage />
-      <div className="mx-4"> 
+      
       <FirstSection />
-      </div>
+      
       <div className="h-screen"></div>
     </>
   );
