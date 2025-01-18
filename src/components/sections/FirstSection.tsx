@@ -6,6 +6,7 @@ export default function FirstSection() {
   return (
     <div className="mt-[5rem] flex flex-col">
       <div className="mx-3">
+        <p className="text-center text-red-500 font-semibold text-2xl italic">Restaurant</p>
         <h1 className="text-6xl text-center font-bold">Welcome</h1>
         <p className="text-center text-lg mt-7">
         Welcome to Eatopia, where every dish is crafted with passion and every visit feels like home. Sit back, relax, and let us take you on a delightful culinary journey!
