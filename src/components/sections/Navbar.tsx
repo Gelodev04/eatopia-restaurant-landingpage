@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+} from "@heroui/navbar";
 
 export const BurgerIcon = () => {
   return (
@@ -141,24 +150,26 @@ export const TiktokIcon = () => {
   );
 };
 
-
-
 export default function CustomNavbar() {
   return (
-    <nav className="fixed z-10  py-4 px-4  w-full">
-      <div className="flex items-center justify-between ">
-        <h1 className="text-white text-3xl">Eatopia</h1>
-        <ul className="flex items-center">
-          <li className="flex gap-5 mr-6">
-            <FacebookIcon />
-            <InstagramIcon />
-            <TiktokIcon />
-          </li>
-          <li className="cursor-pointer">
-            <BurgerIcon />
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar className="fixed " shouldHideOnScroll>
+      <NavbarBrand>
+        <p className="text-white text-3xl">Eatopia</p>
+      </NavbarBrand>
+      <NavbarContent className="">
+        <NavbarItem>
+          <FacebookIcon />
+        </NavbarItem>
+        <NavbarItem>
+          <InstagramIcon />
+        </NavbarItem>
+        <NavbarItem>
+          <TiktokIcon />
+        </NavbarItem>
+        
+        
+      </NavbarContent>
+          <NavbarMenuToggle className="text-white"></NavbarMenuToggle>
+    </Navbar>
   );
 }

@@ -8,9 +8,7 @@ export default function FirstSection() {
       <div className="mx-3">
         <h1 className="text-6xl text-center font-bold">Welcome</h1>
         <p className="text-center text-lg mt-7">
-          Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed
-          fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac
-          facilisis ligula sem id neque.
+        Welcome to Eatopia, where every dish is crafted with passion and every visit feels like home. Sit back, relax, and let us take you on a delightful culinary journey!
         </p>
       </div>
       <OurStory />
@@ -30,7 +28,7 @@ export default function FirstSection() {
           <span className="text-white text-7xl font-semibold">Eatopia</span>
         </div>
         <Image
-          className=" duration-300 group-hover:scale-105 ease-in-out h-full object-cover"
+          className=" duration-300 group-hover:scale-105 ease-in-out h-full object-cover w-full"
           src="/images/discoverpic.jpg"
           alt="eatopia"
           width={1000}
