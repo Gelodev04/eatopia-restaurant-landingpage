@@ -14,7 +14,7 @@ export default function FirstSection() {
       <OurStory />
       <div className="overflow-hidden rounded-lg h-[450px] mx-8">
         <Image
-          className="rounded-lg duration-300 hover:scale-105 ease-in-out h-full object-cover"
+          className="rounded-lg duration-300 hover:scale-105 ease-in-out h-full object-cover "
           src="/images/food1.jpg"
           alt="eatopia"
           width={1000}
