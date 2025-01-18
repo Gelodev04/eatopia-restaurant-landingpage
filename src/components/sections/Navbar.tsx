@@ -152,24 +152,20 @@ export const TiktokIcon = () => {
 
 export default function CustomNavbar() {
   return (
-    <Navbar className="fixed " shouldHideOnScroll>
-      <NavbarBrand>
-        <p className="text-white text-3xl">Eatopia</p>
-      </NavbarBrand>
-      <NavbarContent className="">
-        <NavbarItem>
-          <FacebookIcon />
-        </NavbarItem>
-        <NavbarItem>
+    <Navbar className="fixed" shouldHideOnScroll isBlurred="false">
+      <h1 className="text-white text-3xl">Eatopia</h1>
+
+      <ul className="flex items-center gap-5">
+        <li className="flex items-center gap-4">
           <InstagramIcon />
-        </NavbarItem>
-        <NavbarItem>
           <TiktokIcon />
-        </NavbarItem>
-        
-        
-      </NavbarContent>
+
+          <FacebookIcon />
+        </li>
+        <li>
           <NavbarMenuToggle className="text-white"></NavbarMenuToggle>
+        </li>
+      </ul>
     </Navbar>
   );
 }
