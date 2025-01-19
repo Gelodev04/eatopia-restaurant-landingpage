@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import "@/style/style.css"
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -15,7 +16,7 @@ export default function Carousel() {
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
-        navigation
+        navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }}
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{ delay: 4000 }}
@@ -58,7 +59,8 @@ export default function Carousel() {
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>
         </SwiperSlide>
-        
+        <div className="swiper-button-prev" ></div>
+        <div className="swiper-button-next" ></div>
        
       </Swiper>
     </div>

@@ -11,14 +11,18 @@ export default function OurMenu() {
       image: "/images/dinner.jpg"
     },
     {
-      type: "Happy Hour",
-      image: "/images/happyhour.jpg"
+      type: "Dessert",
+      image: "/images/dessert.jpg"
+    },
+    {
+      type: "Drink",
+      image: "/images/drink.jpg"
     },
     
   ]
 
   return (
-    <div className="flex flex-col gap-10  items-center mt-20">
+    <div id="menu" className="flex flex-col gap-10  items-center mt-20">
       <div className="text-center">
         <h1 className="text-2xl text-red-500 italic">Discover</h1>
         <p className="uppercase text-5xl font-bold tracking-widest">Our Menu</p>
@@ -34,7 +38,7 @@ export default function OurMenu() {
               height={1000}
               objectFit="cover"
             />
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
+            <div className="absolute bg-black bg-opacity-[0.3] inset-0 z-10 flex flex-col items-center justify-center">
               <button className="bg-white bg-opacity-[0.9] font-medium text-2xl px-5 rounded-full py-2 hover:text-white hover:bg-red-500 duration-250">
                 {item.type}
               </button>
