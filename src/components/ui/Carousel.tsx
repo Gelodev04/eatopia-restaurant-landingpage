@@ -30,6 +30,7 @@ export default function Carousel() {
               alt="Slide 1"
               width={1000}
               height={1000}
+              priority
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>
