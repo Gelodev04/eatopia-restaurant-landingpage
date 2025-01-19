@@ -28,7 +28,7 @@ export default function Carousel() {
               style={{ height: "100vh", width: "100%", objectFit: "cover", objectPosition: "center" }}
               src="/images/carousel1.jpg"
               alt="Slide 1"
-              width={2000}
+              width={1000}
               height={1000}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -40,7 +40,7 @@ export default function Carousel() {
               style={{ height: "100vh", width: "100%", objectFit: "cover", objectPosition: "center" }}
               src="/images/carousel2.jpg"
               alt="Slide 1"
-              width={2000}
+              width={1000}
               height={1000}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -53,7 +53,7 @@ export default function Carousel() {
               style={{ height: "100vh", width: "100%", objectFit: "cover", objectPosition: "center" }}
               src="/images/carousel3.jpg"
               alt="Slide 1"
-              width={2000}
+              width={1000}
               height={1000}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
