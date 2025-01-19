@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   Navbar,
   NavbarBrand,
@@ -8,15 +8,24 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@heroui/navbar";
+import CustomNavbarComponent from "../ui/CustomNavbar";
+import { useNavbarScroll } from "../ui/CustomNavbar";
+
+interface NavbarProps {
+  className?: string;
+  shouldHideOnScroll?: boolean;
+  isBlurred?: boolean; // Explicitly type isBlurred as boolean
+}
 
 export const BurgerIcon = () => {
+  const isScrolled = useNavbarScroll();
   return (
     <svg
       className="w-[40px]"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
+      stroke="#000000"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
@@ -28,7 +37,7 @@ export const BurgerIcon = () => {
         {" "}
         <path
           d="M4 6H20M4 12H14M4 18H9"
-          stroke="#fffffff"
+          stroke="#000000"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -39,6 +48,7 @@ export const BurgerIcon = () => {
 };
 
 export const FacebookIcon = () => {
+  
   return (
     <svg
       className="w-[17px] cursor-pointer"
@@ -152,8 +162,8 @@ export const TiktokIcon = () => {
 
 export default function CustomNavbar() {
   return (
-    <Navbar className="fixed" shouldHideOnScroll isBlurred="false">
-      <h1 className="text-white text-3xl">Eatopia</h1>
+    <CustomNavbarComponent>
+      <h1 className=" text-3xl">Eatopia</h1>
 
       <ul className="flex items-center gap-5">
         <li className="flex items-center gap-4">
@@ -163,9 +173,9 @@ export default function CustomNavbar() {
           <FacebookIcon />
         </li>
         <li>
-          <NavbarMenuToggle className="text-white"></NavbarMenuToggle>
+          <NavbarMenuToggle className=""></NavbarMenuToggle>
         </li>
       </ul>
-    </Navbar>
+    </CustomNavbarComponent>
   );
 }
