@@ -27,6 +27,8 @@ export function useNavbarScroll() {
   return useContext(NavbarScrollContext);
 }
 
+
+
 export default function CustomNavbarComponent({
   children,
 }: CustomNavbarComponentProps): JSX.Element {
@@ -47,7 +49,7 @@ export default function CustomNavbarComponent({
     <NavbarScrollContext.Provider value={isScrolled}>
       <Navbar
         className={`fixed transition-all duration-200 ${
-          isScrolled ? "bg-white text-black" : "bg-transparent text-white"
+          isScrolled ? "bg-white text-black py-3" : "bg-transparent text-white"
         }`}
         shouldHideOnScroll
         isBlurred={false} // Ensures the correct type for `isBlurred`
