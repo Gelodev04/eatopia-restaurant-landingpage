@@ -11,11 +11,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          light: '#3a9eff',
+          DEFAULT: '#f31260',
+          dark: '#005bc4',
+        },
       },
     },
   },
   darkMode: "class",
-  plugins: [heroui()],
+  plugins: [heroui({
+    addCommonColors: true,
+  })],
 } satisfies Config;

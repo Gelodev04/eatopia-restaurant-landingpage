@@ -6,9 +6,10 @@ export default function Datepicker(): JSX.Element {
   return (
     
       <DatePicker
-      
+        color="primary"
         label="Date"
         variant="faded"
+        className="border-black"
       />
     
   );
