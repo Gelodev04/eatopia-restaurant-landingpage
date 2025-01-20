@@ -28,3 +28,16 @@
     -webkit-appearance: none;
     margin: 0;
   }
+
+  /* Normal dot color */
+.swiper-pagination-bullet {
+  background-color: gray;
+  opacity: 0.7;
+  transition: background-color 0.3s ease;
+}
+
+/* Active dot color */
+.swiper-pagination-bullet-active {
+  background-color: #ef4444; /* Replace with your desired color */
+  opacity: 1;
+}

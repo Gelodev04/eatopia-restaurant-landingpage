@@ -13,7 +13,7 @@ export default {
       colors: {
         primary: {
           light: '#3a9eff',
-          DEFAULT: '#f31260',
+          DEFAULT: '#ef4444',
           dark: '#005bc4',
         },
       },
@@ -21,6 +21,6 @@ export default {
   },
   darkMode: "class",
   plugins: [heroui({
-    addCommonColors: true,
+   
   })],
 } satisfies Config;

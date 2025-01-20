@@ -11,7 +11,7 @@ export default function Reservations() {
   return (
     <div className="mt-20 mx-5  flex flex-col justify-center items-center">
       <div className="text-center">
-        <h1 className="text-2xl text-red-500 italic font-medium">
+        <h1 className="text-2xl text-[#ef4444] italic font-medium">
           Reservations
         </h1>
         <p className="uppercase text-5xl font-bold tracking-widest">

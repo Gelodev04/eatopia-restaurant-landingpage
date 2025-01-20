@@ -21,6 +21,7 @@ export default function Carousel() {
         loop={true}
         autoplay={{ delay: 4000 }}
         modules={[Navigation, Pagination, Autoplay]}
+        className="swiper-pagination-custom"
       >
         <SwiperSlide>
           <div className="relative">
