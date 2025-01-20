@@ -1,0 +1,29 @@
+{
+    "reviews": [
+      {
+        "profile": "/images/profile1.jpg",
+        "description": "Great service and friendly staff!",
+        "star": 5,
+        "place": "New York, USA"
+      },
+      {
+        "profile": "/images/proflie2.jpg",
+        "description": "The food was amazing!",
+        "star": 4,
+        "place": "Paris, France"
+      },
+      {
+        "profile": "/images/person3.jpg",
+        "description": "Would visit again.",
+        "star": 3,
+        "place": "Tokyo, Japan"
+      },
+      {
+        "profile": "/images/proflie2.jpg",
+        "description": "The food was Good",
+        "star": 5,
+        "place": "Paris, France"
+      }
+    ]
+  }
+  
