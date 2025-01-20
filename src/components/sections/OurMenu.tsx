@@ -22,7 +22,7 @@ export default function OurMenu() {
   ]
 
   return (
-    <div id="menu" className="flex flex-col gap-10  items-center mt-20">
+    <div id="menu" className="flex flex-col gap-10  items-center ">
       <div className="text-center">
         <h1 className="text-2xl text-red-500 italic font-medium">Discover</h1>
         <p className="uppercase text-5xl font-bold tracking-widest">Our Menu</p>

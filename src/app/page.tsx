@@ -11,11 +11,13 @@ export default function Home() {
     <>
       <Navbar />
       <HomePage />
-      
+
       <FirstSection />
-      <SecondSection/>
-      <OurMenu/>
-      <Reservations/>
+      <SecondSection />
+      <div className="bg-gray-100 py-20 mt-10">
+        <OurMenu />
+        <Reservations />
+      </div>
       <div className="h-screen"></div>
     </>
   );
