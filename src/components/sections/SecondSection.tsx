@@ -5,9 +5,9 @@ import { Rightarrow } from "../ui/OurStory";
 export default function SecondSection() {
   return (
     <div className="mt-[5rem] flex flex-col gap-5">
-      <div className="relative mx-5 overflow-hidden ">
+      <div className="relative mx-5   ">
         <Image
-          className="object-cover h-[350px] rounded-lg"
+          className="h-[350px] object-cover  rounded-lg"
           src="/images/food2.jpg"
           alt="eatopia"
           width={2000}

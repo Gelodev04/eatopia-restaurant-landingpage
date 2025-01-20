@@ -39,7 +39,7 @@ export default function OurMenu() {
               objectFit="cover"
             />
             <div className="absolute bg-black bg-opacity-[0.3] inset-0 z-10 flex flex-col items-center justify-center">
-              <button className="bg-white bg-opacity-[0.9] font-medium text-2xl px-5 rounded-full py-2 hover:text-white hover:bg-red-500 duration-250">
+              <button className="bg-white bg-opacity-[0.8] font-medium text-2xl px-5 rounded-full py-2 hover:text-white hover:bg-red-500 duration-250">
                 {item.type}
               </button>
             </div>
