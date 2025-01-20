@@ -1,6 +1,6 @@
 import React from "react";
 import Datepicker from "../ui/Datepicker";
-import InputPeople from "../ui/InputPeople";
+import InputPeople, { InputEmail, InputName, InputPhone } from "../ui/InputPeople";
 
 export default function Reservations() {
   return (
@@ -16,6 +16,9 @@ export default function Reservations() {
       <div className="mt-5 flex flex-col gap-5">
         <Datepicker />
         <InputPeople/>
+        <InputName/>
+        <InputPhone/>
+        <InputEmail/>
       </div>
     </div>
   );

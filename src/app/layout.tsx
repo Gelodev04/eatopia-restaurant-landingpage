@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import HeroUiProvider from "@/components/ui/HeroUiProvider";
 import "./globals.css";
+import { Montserrat } from 'next/font/google'
+ 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+})
+
+
 
 export const metadata: Metadata = {
   title: "Eatopia",
@@ -13,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.className}>
       <body className="bg-white">
         <HeroUiProvider>
           <main>{children}</main>
