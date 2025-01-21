@@ -17,13 +17,8 @@
         "description": "Would visit again.",
         "star": 3,
         "place": "Tokyo, Japan"
-      },
-      {
-        "profile": "/images/proflie2.jpg",
-        "description": "The food was Good",
-        "star": 5,
-        "place": "Paris, France"
       }
+      
     ]
   }
   

@@ -7,6 +7,8 @@ import OurMenu from "@/components/sections/OurMenu";
 import Reservations from "@/components/sections/Reservations";
 import CustomerReviews from "@/components/sections/CustomerReviews";
 
+import Footer from "@/components/sections/Footer";
+
 
 export default function Home() {
   return (
@@ -21,7 +23,8 @@ export default function Home() {
         <Reservations />
       </div>
       <CustomerReviews/>
-      <div className="h-screen"></div>
+      <Footer/>
+      
     </>
   );
 }
