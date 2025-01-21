@@ -28,13 +28,13 @@ export default function Carousel() {
         loop={true}
         autoplay={{ delay: 4000 }}
         modules={[Navigation, Pagination, Autoplay]}
-        className="swiper-pagination-custom min-h-screen "
+        className="swiper-pagination-custom  "
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} >
-            <div className="relative min-h-screen">
+            <div className="relative ">
               <Image
-              className="min-h-screen object-cover w-full"
+              className="h-[100vh] object-cover w-full"
                 
                 src={slide.src}
                 alt={slide.alt}

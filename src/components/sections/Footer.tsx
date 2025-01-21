@@ -24,48 +24,54 @@ export default function Footer() {
 
   return (
     <div className=" text-white bg-[#212529] pt-20 mt-[10rem] ">
-      <div className="px-5">
-        <h1 className="uppercase font-semibold text-xl">Contact Us</h1>
-        <div className="flex flex-col gap-3 mt-5 text-sm text-gray-400">
-          <div className="flex gap-1">
-            <LocationIcon />
-            <p>3rd floor, 842 Pine Ave, San Francisco, CA 94110</p>
-          </div>
-          <div className="flex gap-1">
-            <PhoneIcon />
-            <p>(+1) 91 415 3421</p>
-          </div>
-          <div className="flex gap-1">
-            <EmailIcon />
-            <p>contact@site.com</p>
+      <div className="px-5 md:flex md:flex-row gap-3  justify-between lg:px-[9rem]">
+        <div>
+          <h1 className="uppercase font-semibold text-xl">Contact Us</h1>
+          <div className="flex flex-col gap-3 mt-5 text-sm text-gray-400">
+            <div className="flex gap-1">
+              <LocationIcon />
+              <p>3rd floor, 842 Pine Ave, San Francisco, CA 94110</p>
+            </div>
+            <div className="flex gap-1">
+              <PhoneIcon />
+              <p>(+1) 91 415 3421</p>
+            </div>
+            <div className="flex gap-1">
+              <EmailIcon />
+              <p>contact@site.com</p>
+            </div>
           </div>
         </div>
-        <div className="mt-10">
+        
+        <div className="mt-10 md:mt-0">
           <h1 className="uppercase font-semibold text-xl">Opening Time</h1>
           <div className="flex flex-col  mt-5 text-sm text-gray-400">
             <p>08:00 AM – 9:00 PM</p>
             <p>Everyday</p>
           </div>
         </div>
-        <div className="mt-10">
+        
+        <div className="mt-10 md:mt-0">
           <h1 className="uppercase font-semibold text-xl">Gallery</h1>
-          <div className="grid grid-cols-4     mt-5 text-sm max-w-[430px]">
+          <div className="grid grid-cols-4 md:gap-x-2 lg:gap-x-2   mt-5 text-sm max-w-[430px]">
             {images.map((image, index) => (
-              <Image
-                width={500}
-                height={500}
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                className="w-[90px] h-[90px] object-cover mb-2  "
-              />
+             
+                <Image
+                  width={500}
+                  height={500}
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-[90px] h-[90px] object-cover mb-2  "
+                />
+              
             ))}
             <div className=""></div>
           </div>
         </div>
       </div>
 
-      <div className="mt-10 bg-[#111111] py-5 px-5 flex items-center justify-between">
+      <div className="mt-10 bg-[#111111] py-5 px-5 flex items-center justify-between lg:px-[9rem]">
         <ul>
           <li className="flex items-center gap-3">
             <InstagramIcon />

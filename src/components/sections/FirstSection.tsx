@@ -4,23 +4,25 @@ import Image from "next/image";
 
 export default function FirstSection() {
   return (
-    <div className="mt-[5rem] flex flex-col">
-      <div className="mx-3">
-        <p className="text-center text-red-500 font-semibold text-2xl italic">Restaurant</p>
-        <h1 className="text-6xl text-center font-bold">Welcome</h1>
-        <p className="text-center text-lg mt-7">
-        Welcome to Eatopia, where every dish is crafted with passion and every visit feels like home. Sit back, relax, and let us take you on a delightful culinary journey!
-        </p>
-      </div>
-      <OurStory />
-      <div className="overflow-hidden rounded-lg h-[450px] mx-8">
-        <Image
-          className="rounded-lg duration-300 hover:scale-105 ease-in-out h-full object-cover "
-          src="/images/food1.jpg"
-          alt="eatopia"
-          width={1000}
-          height={1000}
-        />
+    <div className="mt-[5rem]  ">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5 lg:mx-[5rem]"> 
+        <div className="mx-3 flex flex-col ">
+          <p className="text-center text-red-500 font-semibold text-2xl italic">Restaurant</p>
+          <h1 className="text-6xl text-center font-bold">Welcome</h1>
+          <p className="text-center text-lg mt-7">
+          Welcome to Eatopia, where every dish is crafted with passion and every visit feels like home. Sit back, relax, and let us take you on a delightful culinary journey!
+          </p>
+        <OurStory />
+        </div>
+        <div className="overflow-hidden rounded-lg h-[450px] mx-8">
+          <Image
+            className="rounded-lg duration-300 hover:scale-105 ease-in-out h-full object-cover "
+            src="/images/food1.jpg"
+            alt="eatopia"
+            width={1000}
+            height={1000}
+          />
+        </div>
       </div>
 
       <div className="overflow-hidden  mt-[10rem] h-[500px] relative group">

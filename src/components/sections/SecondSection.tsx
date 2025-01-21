@@ -4,7 +4,7 @@ import { Rightarrow } from "../ui/OurStory";
 
 export default function SecondSection() {
   return (
-    <div className="mt-[5rem] flex flex-col gap-5">
+    <div className="mt-[10rem] flex flex-col gap-5 md:gap-0 md:flex-row justify-center lg:mx-[5rem]">
       <div className="relative mx-5   ">
         <Image
           className="h-[350px] object-cover  rounded-lg"
