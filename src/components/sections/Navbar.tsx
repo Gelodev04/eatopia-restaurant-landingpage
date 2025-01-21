@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -8,67 +10,74 @@ import {
   NavbarMenuItem,
 } from "@heroui/navbar";
 import CustomNavbarComponent from "../ui/CustomNavbar";
-import { useNavbarScroll } from "../ui/CustomNavbar";
-import { FacebookIcon } from "../svgicons/navbaricons";
-import { InstagramIcon } from "../svgicons/navbaricons";
-import { TiktokIcon } from "../svgicons/navbaricons";
-
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TiktokIcon,
+  BurgerIcon,
+} from "../svgicons/navbaricons";
+import NavMenu from "../ui/NavMenu";
 
 interface NavbarProps {
   className?: string;
   shouldHideOnScroll?: boolean;
-  isBlurred?: boolean; // Explicitly type isBlurred as boolean
+  isBlurred?: boolean;
 }
 
-export const BurgerIcon = () => {
-  return (
-    <svg
-      className="w-[40px]"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      stroke="#000000"
-    >
-      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></g>
-      <g id="SVGRepo_iconCarrier">
-        {" "}
-        <path
-          d="M4 6H20M4 12H14M4 18H9"
-          stroke="#000000"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        ></path>{" "}
-      </g>
-    </svg>
-  );
-};
-
-
-
-
-
 export default function CustomNavbar() {
-  return (
-    <CustomNavbarComponent>
-      <h1 className=" text-3xl font-semibold tracking-widest">Eatopia</h1>
+  const menuItems = [
+    { name: "About", link: "#about" },
+    { name: "Discover", link: "#discover" },
+    { name: "Menu", link: "#menu" },
+    { name: "Book", link: "#book" },
+    { name: "Reviews", link: "#reviews" },
+    { name: "Contact", link: "#contact" },
+  ];
 
-      <ul className="flex items-center gap-5">
-        <li className="flex items-center gap-4">
-          <InstagramIcon />
-          <TiktokIcon />
-          <FacebookIcon />
-          
-        </li>
-        <li>
-          <NavbarMenuToggle className=""></NavbarMenuToggle>
-        </li>
-      </ul>
-    </CustomNavbarComponent>
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  return (
+    <>
+      <CustomNavbarComponent>
+        <h1 className="text-3xl font-semibold tracking-widest">Eatopia</h1>
+
+        <div className="lg:block hidden">
+          <ul className="flex items-center gap-10 uppercase text-xs">
+            {menuItems.map((item, index) => (
+              <li key={index} className="hover:text-red-500 duration-200 cursor-pointer">
+                <a href={item.link} className="">
+              {item.name}
+            </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <ul className="flex items-center gap-5 ">
+          <li className="flex items-center gap-4">
+            <InstagramIcon />
+            <TiktokIcon />
+            <FacebookIcon />
+          </li>
+          <li>
+            <button
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+              className="focus:outline-none"
+            >
+              <BurgerIcon />
+            </button>
+          </li>
+        </ul>
+      </CustomNavbarComponent>
+
+      {/* Conditional rendering of the NavMenu */}
+      <NavMenu isVisible={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+    </>
   );
 }

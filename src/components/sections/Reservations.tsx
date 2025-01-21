@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Reservations() {
   return (
-    <div className="mt-[6rem] mx-5  flex flex-col justify-center items-center lg:flex-row gap-5">
+    <div id="book" className="mt-[6rem] mx-5  flex flex-col justify-center items-center lg:flex-row gap-5" style={{ scrollMarginTop: "8rem" }}>
       <div className="flex flex-col gap-5 w-full lg:w-1/2">
         <div className="text-center">
           <h1 className="text-2xl text-[#ef4444] italic font-medium">

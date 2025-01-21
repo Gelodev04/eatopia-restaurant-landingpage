@@ -2,6 +2,36 @@
 
 import { useNavbarScroll } from "../ui/CustomNavbar";
 
+export const BurgerIcon = () => {
+  const isScrolled = useNavbarScroll(); 
+  return (
+    <svg
+      className="w-[35px] cursor-pointer"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#000000"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M4 6H20M4 12H14M4 18H9"
+          stroke={isScrolled ? "#000000" : "#ffffff"}
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+};
+
 export const FacebookIcon = () => {
   const isScrolled = useNavbarScroll(); // Access the isScrolled state
 

@@ -55,6 +55,7 @@ export default function CustomNavbarComponent({
         isBlurred={false} // Ensures the correct type for `isBlurred`
       >
         {children}
+        
       </Navbar>
     </NavbarScrollContext.Provider>
   );

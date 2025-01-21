@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className=" text-white bg-[#212529] pt-20 mt-[10rem] ">
+    <div id="contact" className=" text-white bg-[#212529] pt-20 mt-[10rem] ">
       <div className="px-5 md:flex md:flex-row gap-3  justify-between lg:px-[9rem]">
         <div>
           <h1 className="uppercase font-semibold text-xl">Contact Us</h1>

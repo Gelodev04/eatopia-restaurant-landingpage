@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FirstSection() {
   return (
-    <div className="mt-[5rem]  ">
+    <div id="about" className="mt-[5rem]  scroll-margin-top-[20rem]" style={{ scrollMarginTop: "10rem" }}>
       <div className="flex flex-col md:flex-row items-center justify-center gap-5 lg:mx-[5rem]"> 
         <div className="mx-3 flex flex-col ">
           <p className="text-center text-red-500 font-semibold text-2xl italic">Restaurant</p>
