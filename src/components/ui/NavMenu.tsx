@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function NavMenu({
   isVisible,
@@ -39,9 +40,22 @@ export default function NavMenu({
         url: "#contact",
       },
   ];
+
+  const images = [
+    { src: "/images/dessert.jpg", alt: "gallery1" },
+    { src: "/images/dinner.jpg", alt: "gallery1" },
+    { src: "/images/drink.jpg", alt: "gallery1" },
+    { src: "/images/food1.jpg", alt: "gallery1" },
+    { src: "/images/food2.jpg", alt: "gallery1" },
+    { src: "/images/food3.jpg", alt: "gallery1" },
+    { src: "/images/food4.jpg", alt: "gallery1" },
+    { src: "/images/lucnh.jpg", alt: "gallery1" },
+    { src: "/images/restaurant.jpg", alt: "gallery1" },
+    
+  ];
   return (
     <div
-      className={`fixed top-0 right-0 h-screen w-1/2 lg:w-1/4 bg-white z-[9999] shadow-lg transform transition-transform duration-300 ${
+      className={`fixed overflow-y-auto top-0 right-0 h-screen w-1/2 lg:w-1/3 bg-white z-[9999] shadow-lg transform transition-transform duration-300 ${
         isVisible ? "translate-x-0" : "translate-x-full"
       }`}
     >
@@ -67,8 +81,21 @@ export default function NavMenu({
           Reservation
         </button>
 
-        <div>
-          <h1 className="uppercase font-semibold mt-10">Gallery</h1>
+        <div className="flex flex-col justify-center items-center pb-10">
+          <h1 className="uppercase font-bold tracking-widest mt-10 text-lg">Gallery</h1>
+          <ul className="grid grid-cols-3 gap-2 mt-5 gap-y-2">
+            {images.map((image, index) => (
+              <li key={index}>
+                <Image
+                width={500}
+                height={500}
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-[60px] h-[60px] object-cover lg:w-[90px] lg:h-[90px]   "
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </ul>
     </div>
