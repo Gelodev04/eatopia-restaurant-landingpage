@@ -55,7 +55,7 @@ export default function NavMenu({
   ];
   return (
     <div
-      className={`fixed overflow-y-auto top-0 right-0 h-screen w-1/2 lg:w-1/3 bg-white z-[9999] shadow-lg transform transition-transform duration-300 ${
+      className={`fixed overflow-y-auto top-0 right-0 h-screen w-2/3 lg:w-1/3 bg-white z-[9999] shadow-lg transform transition-transform duration-300 ${
         isVisible ? "translate-x-0" : "translate-x-full"
       }`}
     >
