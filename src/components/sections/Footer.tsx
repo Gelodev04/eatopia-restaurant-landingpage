@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className=" text-white bg-[#212529] pt-20 mt-[10rem] min-h-screen">
+    <div className=" text-white bg-[#212529] pt-20 mt-[10rem] ">
       <div className="px-5">
         <h1 className="uppercase font-semibold text-xl">Contact Us</h1>
         <div className="flex flex-col gap-3 mt-5 text-sm text-gray-400">
