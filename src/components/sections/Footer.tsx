@@ -57,7 +57,7 @@ export default function Footer() {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className="w-[100px] h-[100px] object-cover mb-2  "
+                className="w-[90px] h-[90px] object-cover mb-2  "
               />
             ))}
             <div className=""></div>
