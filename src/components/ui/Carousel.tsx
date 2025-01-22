@@ -35,7 +35,7 @@ export default function Carousel() {
             <div className="relative ">
               <Image
               className="h-[100vh] object-cover w-full"
-                
+                priority
                 src={slide.src}
                 alt={slide.alt}
                 width={500}
