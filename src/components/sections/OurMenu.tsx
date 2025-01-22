@@ -27,11 +27,11 @@ export default function OurMenu() {
         <h1 className="text-2xl text-red-500 italic font-medium">Discover</h1>
         <p className="uppercase text-5xl font-bold tracking-widest">Our Menu</p>
       </div>
-      <div className="mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-3 gap-10 md:gap-4">
+      <div className="mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-3 gap-10 md:gap-4 ">
         {menu.map((item, index) => (
-          <div key={index} className="relative  rounded-lg overflow-hidden group">
+          <div key={index} className="relative  rounded-lg overflow-hidden group ">
             <Image
-              className="rounded-lg h-[550px] duration-300 object-cover group-hover:scale-110"
+              className="rounded-lg h-[550px] duration-300 object-cover group-hover:scale-110 max-w-[500px]"
               src={item.image}
               alt={item.type}
               width={1000}
