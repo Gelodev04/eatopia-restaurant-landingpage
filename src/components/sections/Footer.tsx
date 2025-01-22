@@ -53,7 +53,7 @@ export default function Footer() {
         
         <div className="mt-10 md:mt-0">
           <h1 className="uppercase font-semibold text-xl">Gallery</h1>
-          <div className="grid grid-cols-4 md:gap-x-2 lg:gap-x-2   mt-5 text-sm max-w-[430px]">
+          <div className="grid grid-cols-4 md:gap-x-2 lg:gap-x-2   mt-5 text-sm max-w-[430px] gap-2 gap-y-0">
             {images.map((image, index) => (
              
                 <Image
