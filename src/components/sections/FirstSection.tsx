@@ -30,13 +30,9 @@ export default function FirstSection() {
           <h1 className="text-red-500 text-4xl italic">Discover </h1>
           <span className="text-white text-7xl font-semibold">Eatopia</span>
         </div>
-        <Image
-          className=" duration-300 group-hover:scale-105 ease-in-out h-full object-cover w-full"
-          src="/images/discoverpic.jpg"
-          alt="eatopia"
-          width={1000}
-          height={1000}
-        />
+        <div className='relative h-[100vh] w-[100%] ' style={{backgroundImage: 'url(/images/discoverpic.jpg)', backgroundPosition: '65%', backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
+       
+        </div>
       </div>
     </div>
   );

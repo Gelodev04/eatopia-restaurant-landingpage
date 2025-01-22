@@ -44,7 +44,9 @@ export default function CustomNavbar() {
   return (
     <>
       <CustomNavbarComponent>
-        <h1 className="text-3xl font-semibold tracking-widest">Eatopia</h1>
+        <a href="#home">
+          <h1  className="text-3xl font-semibold tracking-widest hover:text-red-500 duration-200 cursor-pointer">Eatopia</h1>
+        </a>
 
         <div className="lg:block hidden">
           <ul className="flex items-center gap-10 uppercase text-xs">
