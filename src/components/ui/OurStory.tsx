@@ -31,7 +31,7 @@ export const Rightarrow = () => {
 export default function OurStory() {
   return (
     <button className="my-5 flex justify-center items-center gap-1">
-      <span className="text-red-500 uppercase text-sm">Our Story</span>
+      <span className="text-red-500 uppercase text-sm font-medium">Our Story</span>
       <span>
         <Rightarrow />
       </span>
