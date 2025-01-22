@@ -38,8 +38,8 @@ export default function Carousel() {
                 
                 src={slide.src}
                 alt={slide.alt}
-                width={1000}
-                height={1000}
+                width={500}
+                height={500}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             </div>
